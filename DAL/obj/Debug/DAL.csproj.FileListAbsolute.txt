@@ -1,0 +1,10 @@
+d:\users\luis\documents\visual studio 2013\Projects\App LocFor v1\DAL\bin\Debug\DAL.dll
+d:\users\luis\documents\visual studio 2013\Projects\App LocFor v1\DAL\bin\Debug\DAL.pdb
+d:\users\luis\documents\visual studio 2013\Projects\App LocFor v1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+d:\users\luis\documents\visual studio 2013\Projects\App LocFor v1\DAL\obj\Debug\DAL.dll
+d:\users\luis\documents\visual studio 2013\Projects\App LocFor v1\DAL\obj\Debug\DAL.pdb
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\bin\Debug\DAL.dll
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\bin\Debug\DAL.pdb
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Debug\DAL.dll
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Debug\DAL.pdb
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

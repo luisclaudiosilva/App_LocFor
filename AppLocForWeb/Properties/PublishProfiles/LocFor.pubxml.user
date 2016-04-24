@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Users\Luis\Documents\1 Faculdade Evolução\8° Semestre\_PROJETOS PRÁTICO EM ANÁLISE E DESENVOLVIMENTO WEB\Projeto LocFor\Deploy</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Alugar.aspx">
+      <publishTime>04/12/2016 11:57:44</publishTime>
+    </File>
+    <File Include="Anuncie.aspx">
+      <publishTime>04/12/2016 00:52:58</publishTime>
+    </File>
+    <File Include="bin/AppLocForWeb.dll">
+      <publishTime>04/14/2016 06:46:46</publishTime>
+    </File>
+    <File Include="bin/AppLocForWeb.pdb">
+      <publishTime>04/14/2016 06:46:46</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>04/11/2016 14:12:43</publishTime>
+    </File>
+    <File Include="bin/DAL.pdb">
+      <publishTime>04/11/2016 14:12:43</publishTime>
+    </File>
+    <File Include="Cliente.aspx">
+      <publishTime>04/11/2016 22:49:07</publishTime>
+    </File>
+    <File Include="Cliente3.aspx">
+      <publishTime>04/11/2016 15:37:21</publishTime>
+    </File>
+    <File Include="Cliente_Alugar.aspx">
+      <publishTime>04/12/2016 00:37:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/30/2016 11:30:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>04/12/2016 15:30:00</publishTime>
+    </File>
+    <File Include="Data.aspx">
+      <publishTime>04/11/2016 15:12:06</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>03/30/2016 14:14:10</publishTime>
+    </File>
+    <File Include="Disponivel_Alugar.aspx">
+      <publishTime>04/12/2016 15:32:55</publishTime>
+    </File>
+    <File Include="Empresa.aspx">
+      <publishTime>04/12/2016 00:51:13</publishTime>
+    </File>
+    <File Include="Escolher_Aluguel.aspx">
+      <publishTime>04/12/2016 11:57:36</publishTime>
+    </File>
+    <File Include="FaleConosco.aspx">
+      <publishTime>04/12/2016 00:53:49</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="GravandoCliente.aspx">
+      <publishTime>04/11/2016 23:28:34</publishTime>
+    </File>
+    <File Include="img/apt.jpg">
+      <publishTime>04/01/2016 13:52:54</publishTime>
+    </File>
+    <File Include="img/city-wallpaper-6.jpg">
+      <publishTime>04/10/2016 00:48:36</publishTime>
+    </File>
+    <File Include="img/comerciais.jpg">
+      <publishTime>04/10/2016 00:48:36</publishTime>
+    </File>
+    <File Include="img/compar-ou-alugar-imovel2.jpg">
+      <publishTime>04/10/2016 00:48:36</publishTime>
+    </File>
+    <File Include="img/Fortaleza-289-anos.jpg">
+      <publishTime>04/10/2016 00:56:01</publishTime>
+    </File>
+    <File Include="img/Fortaleza-And-Vicinity-77767.jpg">
+      <publishTime>04/10/2016 00:56:01</publishTime>
+    </File>
+    <File Include="img/fundo-azul-1024x640.jpg">
+      <publishTime>04/11/2016 00:32:06</publishTime>
+    </File>
+    <File Include="img/iracema.jpg">
+      <publishTime>04/11/2016 00:27:51</publishTime>
+    </File>
+    <File Include="img/LocFor.fw.png">
+      <publishTime>04/11/2016 09:23:33</publishTime>
+    </File>
+    <File Include="img/login.png">
+      <publishTime>04/02/2016 00:35:28</publishTime>
+    </File>
+    <File Include="img/ne_cearafortaleza0107_0-2.jpg">
+      <publishTime>04/10/2016 00:56:01</publishTime>
+    </File>
+    <File Include="img/seudinheiro-casas-modernas1-635x387.jpg">
+      <publishTime>03/21/2016 00:41:04</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/11/2016 13:43:22</publishTime>
+    </File>
+    <File Include="Master.Master">
+      <publishTime>04/12/2016 11:53:56</publishTime>
+    </File>
+    <File Include="MostrandoCliente.aspx">
+      <publishTime>04/12/2016 00:15:32</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/22/2016 13:52:51</publishTime>
+    </File>
+    <File Include="Pages/Alugar.aspx">
+      <publishTime>03/30/2016 09:12:32</publishTime>
+    </File>
+    <File Include="Pages/Cliente.aspx">
+      <publishTime>03/25/2016 07:51:39</publishTime>
+    </File>
+    <File Include="Pages/Compras.aspx">
+      <publishTime>03/30/2016 08:33:09</publishTime>
+    </File>
+    <File Include="Pages/Consulta.aspx">
+      <publishTime>03/30/2016 08:47:30</publishTime>
+    </File>
+    <File Include="Pages/Content/bootstrap-theme.css">
+      <publishTime>03/17/2016 20:13:01</publishTime>
+    </File>
+    <File Include="Pages/Content/bootstrap-theme.min.css">
+      <publishTime>03/17/2016 20:13:01</publishTime>
+    </File>
+    <File Include="Pages/Content/bootstrap.css">
+      <publishTime>03/17/2016 20:13:01</publishTime>
+    </File>
+    <File Include="Pages/Content/bootstrap.min.css">
+      <publishTime>03/17/2016 20:13:01</publishTime>
+    </File>
+    <File Include="Pages/Disponivel.aspx">
+      <publishTime>04/01/2016 23:57:04</publishTime>
+    </File>
+    <File Include="Pages/Disponivel_Alugar.aspx">
+      <publishTime>03/30/2016 09:43:20</publishTime>
+    </File>
+    <File Include="Pages/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/17/2016 20:13:18</publishTime>
+    </File>
+    <File Include="Pages/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/17/2016 20:13:18</publishTime>
+    </File>
+    <File Include="Pages/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/17/2016 20:13:18</publishTime>
+    </File>
+    <File Include="Pages/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/17/2016 20:13:18</publishTime>
+    </File>
+    <File Include="Pages/Scripts/bootstrap.js">
+      <publishTime>03/17/2016 20:13:35</publishTime>
+    </File>
+    <File Include="Pages/Scripts/bootstrap.min.js">
+      <publishTime>03/17/2016 20:13:35</publishTime>
+    </File>
+    <File Include="Pages/Scripts/jquery-1.9.0.js">
+      <publishTime>03/17/2016 20:13:36</publishTime>
+    </File>
+    <File Include="Pages/Scripts/jquery-1.9.0.min.js">
+      <publishTime>03/17/2016 20:13:36</publishTime>
+    </File>
+    <File Include="Pages/Scripts/jquery-1.9.0.min.map">
+      <publishTime>03/17/2016 20:13:36</publishTime>
+    </File>
+    <File Include="Pages/Vendas.aspx">
+      <publishTime>03/21/2016 16:08:59</publishTime>
+    </File>
+    <File Include="Principal.aspx">
+      <publishTime>04/12/2016 17:26:41</publishTime>
+    </File>
+    <File Include="Reservar.aspx">
+      <publishTime>04/12/2016 15:29:57</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/17/2016 18:53:42</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0.js">
+      <publishTime>03/17/2016 18:53:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0.min.js">
+      <publishTime>03/17/2016 18:53:38</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.0.min.map">
+      <publishTime>03/17/2016 18:53:38</publishTime>
+    </File>
+    <File Include="Scripts/Mascara.js">
+      <publishTime>03/24/2016 21:35:45</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/14/2016 06:46:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

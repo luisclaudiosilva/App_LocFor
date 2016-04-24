@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3577A68F-03E2-4B77-B574-E7197B3FB863}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppLocForWeb</RootNamespace>
+    <AssemblyName>AppLocForWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agendar.aspx" />
+    <Content Include="Alugar.aspx" />
+    <Content Include="Alugar2.aspx" />
+    <Content Include="Anuncie.aspx" />
+    <Content Include="Cliente.aspx" />
+    <Content Include="Cliente3.aspx" />
+    <Content Include="Cliente_Alugar.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\coin-slider.js" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\coin-slider-styles.css" />
+    <Content Include="DadosCliente.aspx" />
+    <Content Include="DadosGerais.aspx" />
+    <Content Include="Data.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Detalhes.aspx" />
+    <Content Include="Disponivel_Alugar.aspx" />
+    <Content Include="Empresa.aspx" />
+    <Content Include="Escolher_Aluguel.aspx" />
+    <Content Include="Escolher_Aluguel2.aspx" />
+    <Content Include="FaleConosco.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="GravandoCliente.aspx" />
+    <Content Include="GravandoCliente2.aspx" />
+    <Content Include="img\apt.jpg" />
+    <Content Include="img\city-wallpaper-6.jpg" />
+    <Content Include="img\comerciais.jpg" />
+    <Content Include="img\como-alugar-um-imovel.jpg" />
+    <Content Include="img\compar-ou-alugar-imovel2.jpg" />
+    <Content Include="img\compar-ou-alugar-imovel2222.jpg" />
+    <Content Include="img\Fortaleza-289-anos.jpg" />
+    <Content Include="img\Fortaleza-And-Vicinity-77767.jpg" />
+    <Content Include="img\fundo-azul-1024x640.jpg" />
+    <Content Include="img\iracema.jpg" />
+    <Content Include="img\LocFor.fw.png" />
+    <Content Include="img\login.png" />
+    <Content Include="img\ne_cearafortaleza0107_0-2.jpg" />
+    <Content Include="img\Pagina-em-construcao.png" />
+    <Content Include="img\principal.jpg" />
+    <Content Include="img\seudinheiro-casas-modernas1-635x387.jpg" />
+    <Content Include="img\small-apartment-design-by-suto-interior-architects2.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="MostrandoCliente.aspx" />
+    <Content Include="MostrandoCliente2.aspx" />
+    <Content Include="Pages\Alugar.aspx" />
+    <Content Include="Pages\Cliente.aspx" />
+    <Content Include="Pages\Consulta.aspx" />
+    <Content Include="Pages\Disponivel.aspx" />
+    <Content Include="Pages\Disponivel_Alugar.aspx" />
+    <Content Include="Pages\Vendas.aspx" />
+    <Content Include="Pages\Content\bootstrap-theme.css" />
+    <Content Include="Pages\Content\bootstrap-theme.min.css" />
+    <Content Include="Pages\Content\bootstrap.css" />
+    <Content Include="Pages\Content\bootstrap.min.css" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Pages\Compras.aspx" />
+    <Content Include="Pages\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Pages\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Pages\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Pages\Scripts\jquery-1.9.0.min.map" />
+    <Content Include="Master.Master" />
+    <Content Include="Content\coin-slider.jquery.json" />
+    <None Include="Properties\PublishProfiles\LocFor.pubxml" />
+    <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Pages\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Pages\Scripts\bootstrap.js" />
+    <Content Include="Pages\Scripts\bootstrap.min.js" />
+    <None Include="Pages\Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Pages\Scripts\jquery-1.9.0.js" />
+    <Content Include="Pages\Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Principal.aspx" />
+    <Content Include="Reservar.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\Mascara.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.9.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agendar.aspx.cs">
+      <DependentUpon>Agendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agendar.aspx.designer.cs">
+      <DependentUpon>Agendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alugar.aspx.cs">
+      <DependentUpon>Alugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alugar.aspx.designer.cs">
+      <DependentUpon>Alugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alugar2.aspx.cs">
+      <DependentUpon>Alugar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alugar2.aspx.designer.cs">
+      <DependentUpon>Alugar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Anuncie.aspx.cs">
+      <DependentUpon>Anuncie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anuncie.aspx.designer.cs">
+      <DependentUpon>Anuncie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente3.aspx.cs">
+      <DependentUpon>Cliente3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente3.aspx.designer.cs">
+      <DependentUpon>Cliente3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente_Alugar.aspx.cs">
+      <DependentUpon>Cliente_Alugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente_Alugar.aspx.designer.cs">
+      <DependentUpon>Cliente_Alugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosCliente.aspx.cs">
+      <DependentUpon>DadosCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosCliente.aspx.designer.cs">
+      <DependentUpon>DadosCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DadosGerais.aspx.cs">
+      <DependentUpon>DadosGerais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosGerais.aspx.designer.cs">
+      <DependentUpon>DadosGerais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data.aspx.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data.aspx.designer.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalhes.aspx.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalhes.aspx.designer.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disponivel_Alugar.aspx.cs">
+      <DependentUpon>Disponivel_Alugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disponivel_Alugar.aspx.designer.cs">
+      <DependentUpon>Disponivel_Alugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa.aspx.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empresa.aspx.designer.cs">
+      <DependentUpon>Empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Escolher_Aluguel.aspx.cs">
+      <DependentUpon>Escolher_Aluguel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escolher_Aluguel.aspx.designer.cs">
+      <DependentUpon>Escolher_Aluguel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Escolher_Aluguel2.aspx.cs">
+      <DependentUpon>Escolher_Aluguel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escolher_Aluguel2.aspx.designer.cs">
+      <DependentUpon>Escolher_Aluguel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FaleConosco.aspx.cs">
+      <DependentUpon>FaleConosco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FaleConosco.aspx.designer.cs">
+      <DependentUpon>FaleConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GravandoCliente.aspx.cs">
+      <DependentUpon>GravandoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GravandoCliente.aspx.designer.cs">
+      <DependentUpon>GravandoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GravandoCliente2.aspx.cs">
+      <DependentUpon>GravandoCliente2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GravandoCliente2.aspx.designer.cs">
+      <DependentUpon>GravandoCliente2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MostrandoCliente.aspx.cs">
+      <DependentUpon>MostrandoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrandoCliente.aspx.designer.cs">
+      <DependentUpon>MostrandoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrandoCliente2.aspx.cs">
+      <DependentUpon>MostrandoCliente2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrandoCliente2.aspx.designer.cs">
+      <DependentUpon>MostrandoCliente2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Alugar.aspx.cs">
+      <DependentUpon>Alugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Alugar.aspx.designer.cs">
+      <DependentUpon>Alugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Disponivel.aspx.cs">
+      <DependentUpon>Disponivel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Disponivel.aspx.designer.cs">
+      <DependentUpon>Disponivel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Disponivel_Alugar.aspx.cs">
+      <DependentUpon>Disponivel_Alugar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Disponivel_Alugar.aspx.designer.cs">
+      <DependentUpon>Disponivel_Alugar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vendas.aspx.cs">
+      <DependentUpon>Vendas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vendas.aspx.designer.cs">
+      <DependentUpon>Vendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Compras.aspx.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Compras.aspx.designer.cs">
+      <DependentUpon>Compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservar.aspx.cs">
+      <DependentUpon>Reservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservar.aspx.designer.cs">
+      <DependentUpon>Reservar.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{99179ee2-9e2c-43ec-9177-c12ef6129dd4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40264</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:40264/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

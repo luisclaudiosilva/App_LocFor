@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="AppLocForWeb.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>..:: LOCFOR ::..</title>
+     <link href="Content/style.css" rel="stylesheet" />
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        var jq = jQuery.noConflict();
+        jq(document).ready((function () {
+            jq('tbody tr:odd').addClass('odd');
+        }));
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+    
+        .footer {
+            height: 403px;
+        }
+    </style>
+</head>
+<body onload ="slide1()">
+    <form id="frmMaster" runat="server" >
+   <div id="main">
+
+            <div class="header" style="font-size: 28px; color: #CC6600;  font-weight: 800; font-family: 'Courier New', Courier, monospace; background-image: none; background-repeat: no-repeat;">
+                &nbsp;<a href="Principal.aspx" title="LocFor"><img src="img/LocFor.fw.png" alt="LocFor" border="0" /></a><br />
+                <br /><span font-style: oblique; font-variant: small-caps; text-transform: capitalize; style="color: #000000; font-weight: bolder;"> 
+                <br />
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink NavigateUrl="Empresa.aspx" ID="HyperLink1" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">A Empresa</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink NavigateUrl="Anuncie.aspx" ID="HyperLink2" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">Anuncie aqui</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink NavigateUrl="FaleConosco.aspx" ID="HyperLink3" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">Fale Conosco</asp:HyperLink>
+                <br />
+&nbsp;</div>
+            <!-- /header -->
+
+            <div class="navSide radius" style="background-image: none; ">
+
+                <ul>
+                    <li><a href="Principal.aspx" title="Inicio" style="color: #CC6600; font-size: medium;">Inicio</a></li>
+                    <li></li>
+                    <li>Clientes
+                        <ul class="itens">
+                            <li><a href="Cliente.aspx" title="Cadastrar novo Cliente" style="color: #CC6600">Cadastre-se</a></li>
+                            <li><a href="Login.aspx" title="Entrar" style="color: #CC6600">Login</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>Alugar um Imóvel
+                        <ul class="itens">
+                            <li><a href="Alugar.aspx" title="Alugar" style="color: #CC6600">Alugar Imóvel</a></li> 
+                            <li><a href="Disponivel_Alugar.aspx" title="Pesquisar Imoveis Aluguel" style="color: #CC6600">Imóveis para Alugar</a></li>
+                            <li><a href="" title="Resevar um Imóvel" style="color: #CC6600">Resevar Imóvel</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>Comprar um Imóvel
+                        <ul class="itens">
+                            <li><a href="#" title="Comprar Imovel" style="color: #CC6600">Comprar um Imóvel</a></li>
+                            <li><a href="#" title="Pesquisar Imoveis Venda" style="color: #CC6600">Imóveis a Venda</a></li>
+                        </ul>
+                    </li>
+              
+                </ul>
+
+            </div>
+            <!-- /navSide -->
+
+            <div id="content" class="radius">
+                <asp:ContentPlaceHolder ID="cphContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- /Content -->
+            
+            <div class="footer">
+            
+             
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /Main -->
+    </form>
+</body>
+</html>

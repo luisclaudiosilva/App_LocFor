@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="locforfaculdae" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Users\\Luis\\Documents\\Visual\ Studio\ 2015\\Projects\\App\ LocFor\ v1\\AppLocForWeb\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Users\\Luis\\Documents\\Visual\ Studio\ 2015\\Projects\\App\ LocFor\ v1\\AppLocForWeb\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="LocForConnectionString-Web.config Connection String" description="LocForConnectionString Connection String used in web.config by the application to access the database." value="Data Source=YASUSHI;Initial Catalog=LocFor;Persist Security Info=True;User ID=sa;Password=6871" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\Luis\\Documents\\Visual\ Studio\ 2015\\Projects\\App\ LocFor\ v1\\AppLocForWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='LocForConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="Projeto_LocacaoConnectionString-Web.config Connection String" description="Projeto_LocacaoConnectionString Connection String used in web.config by the application to access the database." value="Data Source=YASUSHI;Initial Catalog=Projeto_Locacao;Persist Security Info=True;User ID=sa;Password=6871" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Users\\Luis\\Documents\\Visual\ Studio\ 2015\\Projects\\App\ LocFor\ v1\\AppLocForWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Projeto_LocacaoConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

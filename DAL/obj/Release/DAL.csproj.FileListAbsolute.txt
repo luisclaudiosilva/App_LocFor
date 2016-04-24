@@ -1,0 +1,5 @@
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\bin\Release\DAL.dll
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\bin\Release\DAL.pdb
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Release\DAL.dll
+D:\Users\Luis\Documents\Visual Studio 2015\Projects\App LocFor v1\DAL\obj\Release\DAL.pdb
