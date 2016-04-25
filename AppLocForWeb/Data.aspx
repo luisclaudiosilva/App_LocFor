@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
 
- <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Height="454px" Width="1001px">
+ <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Height="460px" Width="983px">
          <p style="font-size: 20px; font-weight: bold">Escolha da data</p><br />
 
   <asp:Panel ID="Panel3" runat="server" Height="322px" Width="367px">
@@ -13,7 +13,7 @@
         <asp:Calendar id="Calendario2" runat="server"
   ForeColor="black"
   Height="71px"
-  Width="349px"
+  Width="340px"
   BorderColor="black"
   BorderStyle="Double"
   ShowGridLines="True"
@@ -27,33 +27,8 @@
     </asp:Panel>
 
   
-              <%--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
-         <%-- <asp:Panel ID="Panel3" runat="server" Height="235px" Width="238px" Visible="false">
-                <h1>Dados do Imóvel</h1>
-                
-                <asp:Label ID="Label8" runat="server" Font-Bold="True" Text="Código: "></asp:Label>
-                <asp:TextBox ID="txtCodigo4" runat="server" Width="120px"></asp:TextBox>
-                <br />
-                <br />
-                 <asp:Label ID="Label9" runat="server" Font-Bold="True" Text="Bairro: "></asp:Label>
-                <asp:TextBox ID="txtBairro4" runat="server" Width="120px"></asp:TextBox>
-                 <br />
-                <br />
-                 <asp:Label ID="Label10" runat="server" Font-Bold="True" Text="Tipo de Imóvel: "></asp:Label>
-                <asp:TextBox ID="txtTipoImovel4" runat="server" Width="120px"></asp:TextBox>
-                 <br />
-                <br />
-                 <asp:Label ID="Label11" runat="server" Font-Bold="True" Text="Negócio: "></asp:Label>
-                <asp:TextBox ID="txtTipoNegocio4" runat="server" Width="120px"></asp:TextBox>
-                 <br />
-                <br />
-                 <asp:Label ID="Label12" runat="server" Font-Bold="True" Text="Quartos: "></asp:Label>
-                <asp:TextBox ID="txtQuarto4" runat="server" Width="120px"></asp:TextBox>
-                 <br />
-                <br />
-                 <asp:Label ID="Label14" runat="server" Font-Bold="True" Text="Valor: "></asp:Label>
-                <asp:TextBox ID="txtValor4" runat="server" Width="120px"></asp:TextBox>
-            </asp:Panel>--%>
+           <%-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
+        
      <asp:Panel ID="Panel2" runat="server" Height="327px" Width="371px">
          
          <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Larger" Text="Dia do fim do aluguel: "></asp:Label>
@@ -68,10 +43,10 @@
          NextMonthText="Próximo" 
          OnSelectionChanged="Calendario_Change" 
          PrevMonthText="Anterior" SelectionMode="Day" 
-         SelectMonthText="Mês" ShowGridLines="True" Width="349px" />
+         SelectMonthText="Mês" ShowGridLines="True" Width="349px" CssClass="odd" />
    </asp:Panel>
 
-    
+         
          <asp:Button ID="btnCadastrar" runat="server" CssClass="btnAdd btn" Text="Seguinte" OnClick="btnCadastrar_Click" />
      <%--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--%>
     <asp:Button ID="btnVoltar" runat="server" CssClass="btnAdd btn" Text="Inicio" OnClick="btnVoltar_Click" />
