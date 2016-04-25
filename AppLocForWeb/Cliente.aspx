@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
 
      
-<asp:Panel runat="server" ID="pnlCadastro" Visible="True" Height="386px" Width="713px">
+<asp:Panel runat="server" ID="pnlCadastro" Visible="True" Height="386px" Width="791px">
         <h1 style="font-weight: bold">Clientes</h1>
         
         <asp:Panel ID="Panel2" runat="server" Height="301px" Width="264px" BorderStyle="None" BackColor="#FEF8F1">
