@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
-    <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Height="376px">
+    <asp:Panel runat="server" CssClass="painel" Visible="true" Height="376px" Width="956px">
 
-            <asp:Panel ID="Panel1" runat="server" Height="235px" Width="241px">
+            <asp:Panel CssClass="painel" runat="server" Height="235px" Width="241px">
                 <h1>Dados do Cliente</h1><br />
             <asp:Label ID="Label1" runat="server" Text="Codigo: " Font-Bold="True"></asp:Label>
             <asp:TextBox ID="txtCodigo" runat="server"></asp:TextBox>
@@ -31,7 +31,7 @@
                     
              </asp:Panel> 
 
-            <asp:Panel ID="Panel3" runat="server" Height="235px" Width="238px">
+            <asp:Panel CssClass="painel" runat="server" Height="235px" Width="238px">
                 <h1>Dados do Imóvel</h1><br />
                 
                 <asp:Label ID="Label7" runat="server" Font-Bold="True" Text="Código: "></asp:Label>
@@ -59,7 +59,7 @@
             </asp:Panel>
             
 
-              <asp:Panel ID="Panel4" runat="server" Height="235px" Width="219px">
+              <asp:Panel CssClass="painel" runat="server" Height="235px" Width="219px">
                 <h1>Forma de Pagamento</h1>
                 
                   <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="formaPagamento" DataValueField="codigoPagamento" Font-Bold="True" Font-Size="Medium" AppendDataBoundItems="True">
@@ -68,7 +68,7 @@
                   <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Projeto_LocacaoConnectionStringAcer %>" SelectCommand="SELECT [codigoPagamento], [formaPagamento] FROM [Pagamento]"></asp:SqlDataSource>
             </asp:Panel>
             
-        <asp:Panel ID="Panel2" runat="server">
+        <asp:Panel CssClass="painel" runat="server">
             <br />
             <br />
             <br />
