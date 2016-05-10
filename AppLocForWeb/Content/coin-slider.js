@@ -232,8 +232,8 @@
 			$(el).append("<div id='cs-navigation-"+el.id+"'></div>");
 			$('#cs-navigation-'+el.id).hide();
 			
-			$('#cs-navigation-'+el.id).append("<a href='#' id='cs-prev-"+el.id+"' class='cs-prev'>prev</a>");
-			$('#cs-navigation-'+el.id).append("<a href='#' id='cs-next-"+el.id+"' class='cs-next'>next</a>");
+			$('#cs-navigation-'+el.id).append("<a href='#' id='cs-prev-"+el.id+"' class='cs-prev'>Anterior</a>");
+			$('#cs-navigation-'+el.id).append("<a href='#' id='cs-next-"+el.id+"' class='cs-next'>Próximo</a>");
 			$('#cs-prev-'+el.id).css({
 				'position' 	: 'absolute',
 				'top'		: params[el.id].height/2 - 15,
@@ -468,10 +468,9 @@
 	
 	
 	// default values
-	$.fn.coinslider.defaults =
-        {
+	$.fn.coinslider.defaults ={
 		width: 940, // width of slider panel
-		height: 330, // height of slider panel
+		height: 400, // height of slider panel
 		spw: 7, // squares per width
 		sph: 5, // squares per height
 		delay: 5000, // delay between images in ms

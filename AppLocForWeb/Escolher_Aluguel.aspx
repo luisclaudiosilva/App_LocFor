@@ -3,21 +3,21 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
 
-    <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Font-Size="Large" Width="969px" Height="399px">
-        <h1 style="font-weight: bold; text-align: justify;">Sua busca encontrou: <asp:Label ID="lblResultado" runat="server"></asp:Label> Resultados! </h1>
+    <h1 style="font-weight: bold; text-align:center; margin-top:10px;">Sua busca encontrou: <asp:Label ID="lblResultado" runat="server"></asp:Label>Resultados!</h1>
 
-
-                 <asp:GridView ID="GridView1" CssClass="gridDisponivel" runat="server" GridLines="None" AutoGenerateColumns="False" DataKeyNames="codigoImovel" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="934px" Height="219px">
+    <asp:Panel runat="server" ID="pnlCadastro" CssClass="panelEscolherAluguel" Visible="true" Font-Size="Large" Width="969px" Height="333px" ScrollBars="Auto">
+                 <asp:GridView ID="GridView1" CssClass="gridDisponivel" runat="server" GridLines="None" AutoGenerateColumns="False" DataKeyNames="codigoImovel" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="934px">
                      <AlternatingRowStyle BackColor="White" ForeColor="#284775"/>
                     <Columns>
                         <asp:CommandField ShowSelectButton="True" />
-                        <asp:BoundField DataField="codigoImovel" HeaderText="Código do Imóvel" InsertVisible="False" ReadOnly="True" SortExpression="codigoImovel" />
+                        <asp:BoundField DataField="codigoImovel" HeaderText="Código" InsertVisible="False" ReadOnly="True" SortExpression="codigoImovel" />
                         <asp:BoundField DataField="nomeBairro" HeaderText="Bairro" SortExpression="nomeBairro" />
                         <asp:BoundField DataField="nomeTipoImovel" HeaderText="Tipo de Imóvel" SortExpression="nomeTipoImovel" />
                         <asp:BoundField DataField="negocioNome" HeaderText="Tipo de Negócio" SortExpression="negocioNome" />
-                        <asp:BoundField DataField="quantidadeQuarto" HeaderText="Quantidade de Quarto" SortExpression="quantidadeQuarto"/>
-                        <asp:BoundField DataField="tipoSituacao" HeaderText="Situacao do Imóvel" SortExpression="tipoSituacao" />
-                        <asp:BoundField DataField="valorImovel" HeaderText="Valor do Imóvel" SortExpression="valorImovel" />
+                        <asp:BoundField DataField="quantidadeQuarto" HeaderText="Quarto" SortExpression="quantidadeQuarto"/>
+                        <%--<asp:BoundField DataField="tipoSituacao" HeaderText="Situação" SortExpression="tipoSituacao" />--%>
+                        <asp:BoundField DataField="valorImovel" HeaderText="Valor" SortExpression="valorImovel" />
+                        <%--<asp:BoundField DataField="foto" HeaderText="Foto" SortExpression="foto" />--%>
                     </Columns>
                      <EditRowStyle BackColor="#999999" />
                     <EmptyDataTemplate>
@@ -42,16 +42,16 @@
                     </SelectParameters>
                 </asp:SqlDataSource>
         
-        
-            <asp:Label ID="lblMensagem" runat="server"></asp:Label>
+      </asp:Panel> 
+    <asp:Panel runat="server" ID="PanelBotoes" Font-Size="Large" Width="723px" Height="50px" CssClass="botoes">  
         
         <asp:Button ID="Inicio" runat="server" CssClass="btnAdd btn" OnClick="Inicio_Click" Text="Inicio" />
         &nbsp;
-        <asp:Button ID="Voltar" runat="server" CssClass="btnAdd btn" OnClick="Voltar_Click" Text="Voltar" />
-        &nbsp;
-         <asp:Button ID="btnEscolherAluguel" runat="server" Text="Seguinte" CssClass="btnAdd btn" OnClick="btnEscolherAluguel_Click"/>
-           
-    </asp:Panel>
+        <asp:Button ID="btnEscolherAluguel" runat="server" Text="Seguinte" CssClass="btnAdd btn" OnClick="btnEscolherAluguel_Click"/>
+     <asp:Label ID="lblMensagem" runat="server" ForeColor="Red"></asp:Label>
+          
+    </asp:Panel>     
+   
      <asp:TextBox ID="txtCodigo" runat="server" Visible="false"></asp:TextBox>
         
          <asp:TextBox ID="txtBairro" runat="server" Visible="false"></asp:TextBox>

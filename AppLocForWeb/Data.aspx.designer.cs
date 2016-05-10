@@ -22,6 +22,24 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Panel pnlCadastro;
         
         /// <summary>
+        /// lblMensagem1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensagem1;
+        
+        /// <summary>
+        /// Panel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+        
+        /// <summary>
         /// Panel3 control.
         /// </summary>
         /// <remarks>
@@ -94,6 +112,15 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Calendar Calendario1;
         
         /// <summary>
+        /// PanelBotoes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelBotoes;
+        
+        /// <summary>
         /// btnCadastrar control.
         /// </summary>
         /// <remarks>
@@ -110,15 +137,6 @@ namespace AppLocForWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVoltar;
-        
-        /// <summary>
-        /// lblMensagem1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensagem1;
         
         /// <summary>
         /// txtCodigo4 control.
@@ -173,6 +191,24 @@ namespace AppLocForWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtValor4;
+        
+        /// <summary>
+        /// txtDataIni control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDataIni;
+        
+        /// <summary>
+        /// txtDatafim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDatafim;
         
         /// <summary>
         /// txtCodigo control.

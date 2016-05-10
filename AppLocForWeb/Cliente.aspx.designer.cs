@@ -31,13 +31,13 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
-        /// Label1 control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
         /// lblLogin control.
@@ -85,15 +85,6 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Button btnConfirmar;
         
         /// <summary>
-        /// btnVoltar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVoltar;
-        
-        /// <summary>
         /// lblMensagem control.
         /// </summary>
         /// <remarks>
@@ -103,22 +94,22 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Label lblMensagem;
         
         /// <summary>
-        /// Panel1 control.
+        /// PanelBotoes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel1;
+        protected global::System.Web.UI.WebControls.Panel PanelBotoes;
         
         /// <summary>
-        /// Label2 control.
+        /// btnVoltar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button btnVoltar;
         
         /// <summary>
         /// btnCadastrar control.

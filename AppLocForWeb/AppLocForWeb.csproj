@@ -73,6 +73,7 @@
     <Content Include="Content\style.css" />
     <Content Include="Content\coin-slider-styles.css" />
     <Content Include="DadosCliente.aspx" />
+    <Content Include="DadosClienteCadastrado.aspx" />
     <Content Include="DadosGerais.aspx" />
     <Content Include="Data.aspx" />
     <Content Include="Default.aspx" />
@@ -81,11 +82,16 @@
     <Content Include="Empresa.aspx" />
     <Content Include="Escolher_Aluguel.aspx" />
     <Content Include="Escolher_Aluguel2.aspx" />
+    <Content Include="Escolher_Aluguel_Todos.aspx" />
     <Content Include="FaleConosco.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FormaPagamento.aspx" />
     <Content Include="GravandoCliente.aspx" />
     <Content Include="GravandoCliente2.aspx" />
     <Content Include="img\apt.jpg" />
+    <Content Include="img\avista.png" />
+    <Content Include="img\boleto.png" />
+    <Content Include="img\cartao.png" />
     <Content Include="img\city-wallpaper-6.jpg" />
     <Content Include="img\comerciais.jpg" />
     <Content Include="img\como-alugar-um-imovel.jpg" />
@@ -95,6 +101,7 @@
     <Content Include="img\Fortaleza-And-Vicinity-77767.jpg" />
     <Content Include="img\fundo-azul-1024x640.jpg" />
     <Content Include="img\iracema.jpg" />
+    <Content Include="img\LocFor.fw.ico" />
     <Content Include="img\LocFor.fw.png" />
     <Content Include="img\login.png" />
     <Content Include="img\ne_cearafortaleza0107_0-2.jpg" />
@@ -105,6 +112,7 @@
     <Content Include="Login.aspx" />
     <Content Include="MostrandoCliente.aspx" />
     <Content Include="MostrandoCliente2.aspx" />
+    <Content Include="MostrandoDadosAluguel.aspx" />
     <Content Include="Pages\Alugar.aspx" />
     <Content Include="Pages\Cliente.aspx" />
     <Content Include="Pages\Consulta.aspx" />
@@ -201,6 +209,13 @@
     <Compile Include="DadosCliente.aspx.designer.cs">
       <DependentUpon>DadosCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DadosClienteCadastrado.aspx.cs">
+      <DependentUpon>DadosClienteCadastrado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosClienteCadastrado.aspx.designer.cs">
+      <DependentUpon>DadosClienteCadastrado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DadosGerais.aspx.cs">
       <DependentUpon>DadosGerais.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -257,12 +272,26 @@
     <Compile Include="Escolher_Aluguel2.aspx.designer.cs">
       <DependentUpon>Escolher_Aluguel2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Escolher_Aluguel_Todos.aspx.cs">
+      <DependentUpon>Escolher_Aluguel_Todos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escolher_Aluguel_Todos.aspx.designer.cs">
+      <DependentUpon>Escolher_Aluguel_Todos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FaleConosco.aspx.cs">
       <DependentUpon>FaleConosco.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FaleConosco.aspx.designer.cs">
       <DependentUpon>FaleConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormaPagamento.aspx.cs">
+      <DependentUpon>FormaPagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormaPagamento.aspx.designer.cs">
+      <DependentUpon>FormaPagamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="GravandoCliente.aspx.cs">
       <DependentUpon>GravandoCliente.aspx</DependentUpon>
@@ -305,6 +334,13 @@
     </Compile>
     <Compile Include="MostrandoCliente2.aspx.designer.cs">
       <DependentUpon>MostrandoCliente2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrandoDadosAluguel.aspx.cs">
+      <DependentUpon>MostrandoDadosAluguel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrandoDadosAluguel.aspx.designer.cs">
+      <DependentUpon>MostrandoDadosAluguel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Alugar.aspx.cs">
       <DependentUpon>Alugar.aspx</DependentUpon>
@@ -370,6 +406,7 @@
     <Compile Include="Reservar.aspx.designer.cs">
       <DependentUpon>Reservar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TextBox1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">

@@ -22,13 +22,13 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Panel pnlCadastro;
         
         /// <summary>
-        /// txtCodigoCliente control.
+        /// Panel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCodigoCliente;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
         
         /// <summary>
         /// lblNome control.
@@ -121,6 +121,24 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.TextBox tbSenha;
         
         /// <summary>
+        /// lblMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        
+        /// <summary>
+        /// PanelBotoes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelBotoes;
+        
+        /// <summary>
         /// btnInicio control.
         /// </summary>
         /// <remarks>
@@ -139,12 +157,21 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Button btnSeguinte;
         
         /// <summary>
-        /// lblMensagem control.
+        /// btnAlugar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        protected global::System.Web.UI.WebControls.Button btnAlugar;
+        
+        /// <summary>
+        /// txtCodigoCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCodigoCliente;
     }
 }

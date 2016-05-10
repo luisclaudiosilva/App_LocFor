@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
 
-    <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Width="961px" BackColor="White" Height="381px">
+    <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Width="961px" BackColor="White" Height="450px">
        
      <%--  
      

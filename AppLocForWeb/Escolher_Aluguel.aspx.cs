@@ -27,11 +27,6 @@ namespace AppLocForWeb
 
         }
 
-        //public String Nome
-        //{
-        //    get { return txtCodigo.Text; }
-        //}
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
@@ -40,16 +35,12 @@ namespace AppLocForWeb
             txtTipoImovel.Text = GridView1.SelectedRow.Cells[3].Text;
             txtTipoNegocio.Text = GridView1.SelectedRow.Cells[4].Text;
             txtQuarto.Text = GridView1.SelectedRow.Cells[5].Text;
-            txtSituacao.Text = GridView1.SelectedRow.Cells[6].Text;
-            txtValor.Text = GridView1.SelectedRow.Cells[7].Text;
+            //txtSituacao.Text = GridView1.SelectedRow.Cells[6].Text;
+            txtValor.Text = GridView1.SelectedRow.Cells[6].Text;
         }
 
         protected void btnEscolherAluguel_Click(object sender, EventArgs e)
         {
-
-            //Server.Transfer("Cliente_Alugar.aspx");
-
-            //Response.Redirect("Cliente.aspx");
             if (txtCodigo.Text != "")
             {
                 int codigo = Convert.ToInt32(txtCodigo.Text);
@@ -80,12 +71,24 @@ namespace AppLocForWeb
 
         protected void Inicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Principal.aspx");
-        }
+            //Response.Redirect("Principal.aspx");
 
-        protected void Voltar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Alugar.aspx");
+            //decimal ValorTotal = 0;
+
+            //foreach (GridViewRow row in GridView1.Rows)
+            //{
+            //    if (row.RowType != DataControlRowType.Header && row.RowType != DataControlRowType.Footer)
+            //    {
+            //        if (row.Cells[7].Text != null && row.Cells[7].Text != string.Empty)
+            //        {
+            //            ValorTotal += Convert.ToDecimal(row.Cells[7].Text);
+            //        }
+
+            //    }
+            //}
+
+            //lblMensagem.Text = ValorTotal.ToString("C2");
+
         }
     }
 }

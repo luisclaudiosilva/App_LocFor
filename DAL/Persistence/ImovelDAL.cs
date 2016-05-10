@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 using DAL.Model;
 using System.Data.SqlClient;
 
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+
+
+
 namespace DAL.Persistence
 {
     public class ImovelDAL : Conexao
@@ -183,6 +190,9 @@ namespace DAL.Persistence
                 FecharConexao();
             }
         }
+
+
+        
 
         public void Atualizar(int codigo)
         {

@@ -42,7 +42,7 @@ namespace AppLocForWeb
 
             if (pagamento == "Selecione:")
             {
-                lblMensagem.Text = "Tipo de pagamento não informado!";
+                lblMensagem.Text = txtNome.Text + " não escolheu forma de pagamento!";
             }
             else
             {
@@ -52,8 +52,8 @@ namespace AppLocForWeb
                     Alugados alu = new Alugados();
                     alu.codigoImovel = Convert.ToInt32(txtCodigo5.Text);
                     alu.codigoCliente = Convert.ToInt32(txtCodigo.Text);
-                    alu.dataInicioAluguel = dataInicio.Text;
-                    alu.dataFimAluguel = dataFim.Text;
+                    alu.dataInicio = Convert.ToDateTime(dataInicio.Text);
+                    alu.dataFim = Convert.ToDateTime(dataFim.Text);
                     alu.pagamento = Convert.ToInt32(DropDownList1.SelectedValue);
 
                     AluguelDAL aludal = new AluguelDAL();

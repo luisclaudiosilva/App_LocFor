@@ -18,7 +18,7 @@
     <style type="text/css">
     
         .footer {
-            height: 403px;
+            height: 221px;
         }
         #frmMaster {
             width: 1303px;
@@ -29,6 +29,8 @@
 	<script type="text/javascript" src="Content/coin-slider.js"></script>
 
 	<link rel="stylesheet" href="Content/coin-slider-styles.css" type="text/css" />
+
+    <link rel="icon" href="img/LocFor.fw.ico"/> 
 
 </head>
 <body onload ="slide1()">
@@ -53,45 +55,19 @@
             </div>
             <!-- /header -->
 
-            <div class="navSide radius" style="background-image: none; ">
-
-              <%--  <ul>
-                    <li><a href="Disponivel_Alugar.aspx" title="Inicio" style="color: #CC6600; font-size: medium;">Inicio</a></li>
-                    <li></li>
-                    <li>Clientes
-                        <ul class="itens">
-                            <li><a href="Cliente.aspx" title="Cadastrar novo Cliente" style="color: #CC6600">Cadastre-se</a></li>
-                            <br />
-                            <li><a href="Login.aspx" title="Entrar" style="color: #CC6600">Login</a></li>
-                            <li></li>
-                        </ul>
-                    </li>
-                    <br />
-                    <li>Alugar um Imóvel
-                        <ul class="itens">
-                            <li><a href="Alugar.aspx" title="Alugar" style="color: #CC6600">Alugar Imóvel</a></li> 
-                            <br />
-                            <li><a href="Disponivel_Alugar.aspx" title="Pesquisar Imoveis Aluguel" style="color: #CC6600">Imóveis para Alugar</a></li>
-                            <li><a href="Reservar.aspx" title="Agendar Aluguel" style="color: #CC6600">Agendar Aluguel</a></li>
-                            <li></li>
-                        </ul>
-                    </li>
-                   <li>Comprar um Imóvel
-                        <ul class="itens">
-                            <li><a href="#" title="Comprar Imovel" style="color: #CC6600">Comprar um Imóvel</a></li>
-                            <li><a href="#" title="Pesquisar Imoveis Venda" style="color: #CC6600">Imóveis a Venda</a></li>
-                        </ul>
-                    </li>
-              
-                </ul>--%>
+            <div id="divNav" class="navSide radius" style="background-image: none; height: 446px;">
 
         <asp:Panel runat="server" ID="pnlCadastro" Visible="true" Font-Size="Medium" Width="240px" HorizontalAlign="Left">
-        <p style="font-size: 20px; font-weight: bold; text-align: center;">&nbsp;</p>
+       
+          
+            <p style="font-size: 20px; font-weight: bold; text-align: center;">
+                &nbsp;</p>
             <p style="font-size: 20px; font-weight: bold; text-align: center;">
                 Busca rápida:</p>
         <br />
+               <asp:Panel ID="Panelmenu" CssClass="panelEscolherAluguel" runat="server">
             <br />
-            
+         
             &nbsp; &nbsp;BAIRRO:&nbsp;<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" CssClass="radiusInput" DataSourceID="SqlDataSource5" DataTextField="nomeBairro" DataValueField="codigoBairro" Font-Size="Large" Height="35px" Width="140px">
             <asp:ListItem></asp:ListItem>
         </asp:DropDownList>
@@ -124,14 +100,18 @@
                 </asp:SqlDataSource>
 
                 <br />
-
+                   </asp:Panel>
+            <br />
                 <br />
+
+            <asp:HyperLink NavigateUrl="Escolher_Aluguel_Todos.aspx" Width="240px" ID="buscarTodos" runat="server" CssClass="buscarTodos" Font-Bold="True">Buscar Todos</asp:HyperLink>
+
                 <p>
                 <asp:Label ID="lblMensagem" runat="server"></asp:Label>
                 </p>
                 <br />
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Button ID="Buscar" runat="server" Text="Buscar" CssClass="btnAdd btn" Height="50px" Width="130px" OnClick="Buscar_Click"/>
 
     </asp:Panel>
@@ -145,6 +125,26 @@
             </div>
             <!-- /Content -->
             
+
+       <%-- footer --%>
+
+       <div class="footer" style="font-size: 28px; font-weight: 800; font-family: 'Courier New', Courier, monospace; background-image: none; background-repeat: no-repeat; top: -178px; left: -60px;">
+                <a href="Principal.aspx" title="LocFor"><img src="img/LocFor.fw.png" alt="LocFor" border="0" /></a><br />
+              <%--  <br /><span font-style: oblique; font-variant: small-caps; text-transform: capitalize; style="color: #000000; font-weight: bolder;"> 
+                <br />
+                </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink NavigateUrl="Empresa.aspx" ID="HyperLink5" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">A Empresa</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink NavigateUrl="Anuncie.aspx" ID="HyperLink6" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">Anuncie aqui</asp:HyperLink>
+                &nbsp;
+                <asp:HyperLink NavigateUrl="FaleConosco.aspx" ID="HyperLink7" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">Fale Conosco</asp:HyperLink>
+                
+                &nbsp;
+                <asp:HyperLink NavigateUrl="Cliente.aspx" ID="HyperLink8" runat="server" Font-Size="X-Large" CssClass="hyp" Font-Bold="True">Cliente</asp:HyperLink>
+                <br />--%>
+
+            </div>
+
             <!-- /footer -->
 
         </div>

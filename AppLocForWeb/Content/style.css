@@ -2,7 +2,7 @@
     border-style: none;
     border-color: inherit;
     border-width: 2px;
-    margin: 0px 0 0 0px;
+    margin:  0px 10px 0px 0px ;
     padding: 0;
     outline: none;
     float: none;
@@ -11,14 +11,24 @@
 
 body {
     background: #F5F5F5;
+    
     font: 12px Arial, Tahoma, Verdana;
     color: #000;
     height: 725px;
-    background-image: url("../img/ne_cearafortaleza0107_0-2.jpg")
+    /*background-image: url("../img/ne_cearafortaleza0107_0-2.jpg")*/
 }
 
 .hyp{
     color: #0e145a;
+    border-left: solid;
+    border-left-color: #E6E6E6;
+    border-left-width: 3px;
+    /*border-top: solid;
+    border-top-color: #E6E6E6;
+    border-top-width:3px;*/
+    text-align:center;
+    /*margin-left:15px;*/
+    padding-left:10px;
 }
 
 .hyp:link, .hyp:visited {
@@ -27,6 +37,20 @@ body {
 .hyp:hover {
 	text-decoration: underline; 
 	color: #dedede;
+	}
+
+.buscarTodos{
+    color: #0e145a;
+    text-align:center;
+    
+}
+
+.buscarTodos:link, .buscarTodos:visited {
+	text-decoration: none
+	}
+.buscarTodos:hover {
+	text-decoration: underline; 
+	color: #729dde;
 	}
 
 
@@ -42,33 +66,63 @@ body {
     width: 1313px;
     height: 716px;
     margin-right: auto;
-    margin-top: 0;
+
     margin-bottom: 0;
 }
 
 /*begin header*/
-.header {
-    width: 1347px;
-    height: 197px;
+.header 
+{
+    width: 1349px;
+    height: 174px;
     background-color: #5e85b0;
     border-radius: 0px;
     
     border-bottom: 0px solid #ECECFB;
     margin-bottom: 10px;
-    margin-top: 0px;
+   
 }
 
-    .header img {
+    .header img 
+    {
         float: left;
         /*margin: 10px 2px 10px 10px;*/
-        
-    width: 242px;
-    height: 171px;
+       margin-left: 10px; 
+    width: 215px;
+    height: 145px;
     z-index: 1;
     left: 22px;
     top: 12px;
     position: relative; 
 }
+
+    /*begin footer*/
+.footer 
+{
+    width: 1409px;
+    height: 150px;
+    background-color: #5e85b0;
+    border-radius: 0px;
+    
+    border-bottom: 0px solid #ECECFB;
+    
+    margin-top: 65%;
+    position: absolute;
+    
+}
+
+    .footer img 
+    {
+    float: right;
+    /*margin: 10px 2px 10px 10px;*/    
+    width: 134px;
+    height: 90px;
+    z-index: 1;
+    left: -94px;
+    top: 68px;
+    position: relative; 
+}
+    /*end footer*/
 
 .header2{
     
@@ -135,6 +189,18 @@ body {
     margin-left: 20px;
 }
 
+.navSide #Panelmenu{
+    border-bottom: solid;
+    border-bottom-color: #E6E6E6;
+    border-bottom-width: 3px;
+    border-top: solid;
+    border-top-color: #E6E6E6;
+    border-top-width:3px;
+    text-align:center;
+    margin-left:15px;
+    padding-bottom:10px;
+}
+
 .navSide ul {
     list-style:none;
 }
@@ -179,24 +245,212 @@ body {
     min-height: 300px;
 }
 
+#content .gridExcluir{
+   text-align:left;
+   text-decoration-style:solid;
+  
+   font-size:14px;
+   float:left;
+   position:relative;
+    top: -5px;
+    height:84px;
+    width: 302px;
+    left: 247px;
+    }
+
+#content .gridExcluir .btnExcluirData{
+  text-align:center;
+  font-size:11px;
+  width: 60px;
+  margin-left:217px;
+    }
+
+#content .botoes{
+   margin-left: 25%;
+   float:left;
+   position:relative;
+    top: 0px;
+    left: -24px;
+    width: 809px;
+}
+
+#content .gridDetalhes{
+   text-align:center;
+   text-decoration-style:solid;
+   font-size:15px;
+   float:left;
+   position:relative;
+    top: -208px;
+    height:203px;
+    width: 400px;
+    left: 567px;
+     border-bottom: 3px solid #E6E6E6;
+    border-top: 3px solid #E6E6E6;
+    }
+
+#content .gridDetalhes2{
+   text-align:center;
+   text-decoration-style:solid;
+   font-size:15px;
+   float:left;
+   position:relative;
+    top: -208px;
+    height:221px;
+    width: 306px;
+    left: 567px;
+     border-bottom: solid;
+    border-bottom-color: #E6E6E6;
+    border-bottom-width: 3px;
+      border-top: solid;
+    border-top-color: #E6E6E6;
+    border-top-width:3px;
+}
+
+#content .h1Detalhes{
+ font-size: 20px;
+ text-align:left;
+ margin-bottom:5px;
+ padding-bottom:5px;
+  border-bottom: solid;
+    border-bottom-color: #E6E6E6;
+    border-bottom-width: 3px;
+}
+
+
+#content .btnMudarData{
+    width: 60px;
+    /*height: 20px;*/
+    line-height: 30px;
+    border: 1px solid #ddd;
+    color: #000;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-weight: 800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#content .btnExcluirData{
+    /*height: 20px;*/
+    line-height: 30px;
+    border: 1px solid #ddd;
+    color: #000;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-weight: 800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+#content .login{
+    padding-top:7%;
+    
+   margin-left: 27%;
+    text-align:center;
+    display: inline-block;
+            margin: 10px 5px;
+            }
+
+#content .loginfoto{
+    float:right;
+    position:relative;
+            }
+
+#content .botoesdata{
+    margin-left: 6%;
+}
+
+#content .panelEscolherAluguel{
+    border-bottom: solid;
+    border-bottom-color: #E6E6E6;
+    border-bottom-width: 3px;
+    border-top: solid;
+    border-top-color: #E6E6E6;
+    border-top-width:3px;
+}
+
     #content div {
-        margin: 0px 100px 10px 10px;
         float: left;
         /*border-bottom: 3px solid #E6E6E6;*/
         padding: 10px 0;
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    }
+
+     #content .divpag {
+        margin: 0px 32px 5px 13px;
+        float: left;
+        /*border-bottom: 3px solid #E6E6E6;*/
+        padding: 10px 0;
+        height:141px; 
+        width:216px;
     }
 
     #content .painel{
-        margin: 0px 10px 10px 10px;
+        margin: 0px 5px 0px 10px;
         float: left;
-        /*border-bottom: 3px solid #E6E6E6;*/
         padding: 10px 0;
+        border-right: 3px solid #E6E6E6;
+    }
+
+     
+    #content .painel2{
+       margin: 5px 10px 0px 10px;
+        float: left;
+        padding: 10px 0;
+       border-bottom: 3px solid #E6E6E6;
+       border-top: 3px solid #E6E6E6;
+        
+    }
+
+    #content .data{
+       margin: 0px 100px 0px 10px;
+        float: left;
+        padding: 10px 0;
+        float:left;
+        position:relative;
+        height:10%;
+    }
+
+    
+
+    #content .painelpag{
+        border-bottom: 3px solid #E6E6E6;
+    }
+
+    #content .pagescolha{
+        margin-left:70px;
+        width:850px;
+    }
+
+    #content .modalBackground{
+    background-color: #999;
+    filter: alpha(opacity-]=70);
+    opacity:0.7;
+    }
+
+    #content .modalPopUp{
+    background-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    border-color: gray;
+    padding: 3px;
+    width: 250px;
+    }
+
+
+    #content .painelpag #check1{
+        background-image:url("../img/avista.png")
     }
 
         #content div h1 {
-            margin: 8px 10px;
+            margin: 8px 10px 0px 10px;
             font: 20px Arial, Verdana;
-    width: 223px;
+    width: 238px;
 }
 
         #content div table {
@@ -271,6 +525,7 @@ body {
                 margin: 0 3px;
                 width: 200px;
                 color: #666;
+               
             }
 
 
@@ -325,6 +580,7 @@ fieldset #rlbTypeSearch li {
 }
 
 .btn2 {
+    text-align:center;
     width: 100px;
     height: 50px;
     line-height: 50px;

@@ -13,15 +13,6 @@ namespace AppLocForWeb {
     public partial class Escolher_Aluguel {
         
         /// <summary>
-        /// pnlCadastro control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlCadastro;
-        
-        /// <summary>
         /// lblResultado control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace AppLocForWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblResultado;
+        
+        /// <summary>
+        /// pnlCadastro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlCadastro;
         
         /// <summary>
         /// GridView1 control.
@@ -49,13 +49,13 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
-        /// lblMensagem control.
+        /// PanelBotoes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMensagem;
+        protected global::System.Web.UI.WebControls.Panel PanelBotoes;
         
         /// <summary>
         /// Inicio control.
@@ -67,15 +67,6 @@ namespace AppLocForWeb {
         protected global::System.Web.UI.WebControls.Button Inicio;
         
         /// <summary>
-        /// Voltar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Voltar;
-        
-        /// <summary>
         /// btnEscolherAluguel control.
         /// </summary>
         /// <remarks>
@@ -83,6 +74,15 @@ namespace AppLocForWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEscolherAluguel;
+        
+        /// <summary>
+        /// lblMensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
         
         /// <summary>
         /// txtCodigo control.

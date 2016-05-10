@@ -39,7 +39,7 @@ namespace AppLocForWeb
             if (c != null)
             {
                 txtCodigoImovel.Text = Convert.ToString(c.codigoImovel);
-                txtdataFim.Text = c.dataFimAluguel;
+                txtdataFim.Text = Convert.ToString( c.dataFim);
                 DropDownList1.SelectedValue = Convert.ToString(c.pagamento);
                 DropDownList1.Enabled = false;  
             }

@@ -8,7 +8,7 @@
         <ul>
             <li>
                 <asp:Label  ID="lblNome" Text="Nome Completo" runat="server"></asp:Label>
-                <asp:TextBox ID="tbNome" Text="" CssClass="radiusInput" runat="server"></asp:TextBox>
+                <asp:TextBox ID="tbNome" CssClass="radiusInput" runat="server"></asp:TextBox>
             </li>
 
              <li>

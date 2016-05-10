@@ -19,6 +19,8 @@ namespace AppLocForWeb
             txtTipoNegocio3.Text = Request.QueryString["negocio"];
             txtQuarto3.Text = Request.QueryString["quarto"];
             txtValor3.Text = Request.QueryString["valor"];
+            txtDataIni.Text = Request.QueryString["dataIni"];
+            txtDatafim.Text = Request.QueryString["datafim"];
 
             txtCodigoCliente.Text = Request.QueryString["codigoCliente"];
             tbNome.Text = Request.QueryString["nomeCliente"];
@@ -27,11 +29,33 @@ namespace AppLocForWeb
             tbLogin.Text = Request.QueryString["loginCliente"];
             tbSenha.Text = Request.QueryString["senhaCliente"];
 
+
+
+            DateTime dataAtual = DateTime.Now.Date;
+            txtDataAtual.Text = Convert.ToString(dataAtual);
+
             tbNome.Enabled = false;
             tbTelefone.Enabled = false;
             tbCPF.Enabled = false;
             tbLogin.Enabled = false;
             tbSenha.Enabled = false;
+
+                
+                    int codigo = Convert.ToInt32(txtCodigoCliente.Text);
+
+                    AluguelDAL aludal = new AluguelDAL();
+                    Alugados alugado = aludal.PesquisarCodigoClienteData(codigo);
+
+                    if (alugado != null)
+                    {
+                        lblMensagem2.Text = "Você tem um aluguel sem uma data de entrega definida!  Não pode fazer uma reserva! ";
+
+                        btnSeguinte.Visible = false;
+                    }
+                   
+
+              
+                  
 
         }
 
@@ -53,6 +77,8 @@ namespace AppLocForWeb
                     string negocio3 = txtTipoNegocio3.Text;
                     int quarto3 = Convert.ToInt32(txtQuarto3.Text);
                     float valor3 = Convert.ToUInt32(txtValor3.Text);
+                    string dataini = txtDataIni.Text;
+                    string datafim = txtDatafim.Text;
 
 
                     int codigo = Convert.ToInt32(txtCodigoCliente.Text);
@@ -69,7 +95,7 @@ namespace AppLocForWeb
                     }
                     else
                     {
-                        url = "Data.aspx?codigoImovel=" + codigo3 + "&nomeBairro=" + bairro3 + "&tipo=" + tipo3 + "&negocio=" + negocio3 + "&quarto=" + quarto3 + "&valor=" + valor3 + "&codigoCliente=" + codigo + "&nomeCliente=" + nomeCliente + "&telefoneCliente=" + telefone + "&cpfCliente=" + cpf + "&loginCliente=" + login + "&senhaCliente=" + senha;
+                        url = "Data.aspx?codigoImovel=" + codigo3 + "&nomeBairro=" + bairro3 + "&tipo=" + tipo3 + "&negocio=" + negocio3 + "&quarto=" + quarto3 + "&valor=" + valor3 + "&dataIni=" + dataini + "&datafim=" + datafim + "&codigoCliente=" + codigo + "&nomeCliente=" + nomeCliente + "&telefoneCliente=" + telefone + "&cpfCliente=" + cpf + "&loginCliente=" + login + "&senhaCliente=" + senha;
 
                     }
                     Response.Redirect(url);
@@ -85,6 +111,45 @@ namespace AppLocForWeb
 
                 lblMensagem.Text = "Preencha o(s) campo(s)! ";
             }
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            lblInicio.Text = GridView1.SelectedRow.Cells[1].Text;
+            lblFim.Text = GridView1.SelectedRow.Cells[2].Text;
+        }
+
+        protected void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+
+            try
+            {
+                Alugados alu = new Alugados();
+             
+                alu.codigoCliente = Convert.ToInt32(txtCodigoCliente.Text);
+                alu.dataInicio = Convert.ToDateTime(lblInicio.Text);
+
+                AluguelDAL aludal = new AluguelDAL();
+
+                aludal.Excluir(alu); //excluindo aluguel
+
+                lblInicio.Text = "";
+                lblFim.Text = "";
+
+
+                lblMensagem2.Text = "Excluido com sucesso!";
+            }
+            catch (Exception)
+            {
+
+                lblMensagem.Text = "Erro ao excluir!";
+            }
+                
+        
+
+
         }
     }
 }

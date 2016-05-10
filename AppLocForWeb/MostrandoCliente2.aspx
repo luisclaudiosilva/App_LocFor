@@ -4,10 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphContent" runat="server">
 
     
-<asp:Panel runat="server" ID="pnlCadastro" Visible="true" Height="318px">
+<asp:Panel runat="server" ID="pnlCadastro" Visible="true" Height="95%">
         <h1>Cadastro de Clientes</h1>
+        <br />
+
+    <asp:Panel ID="Panel2" CssClass="panelEscolherAluguel" runat="server" Height="310px" Width="100%">
+            <br /><br /><br />
         <ul>
-            <asp:TextBox ID="txtCodigoCliente" runat="server" Visible="False"></asp:TextBox>
             <li>
                 <asp:Label  ID="lblNome" Text="Nome Completo" runat="server"></asp:Label>
                 <asp:TextBox ID="tbNome" Text="" CssClass="radiusInput" runat="server"></asp:TextBox>
@@ -21,7 +24,8 @@
               <li>
                 <asp:Label ID="lblCPF" runat="server" Text="CPF"></asp:Label>
                 <asp:TextBox ID="tbCPF" CssClass="radiusInput" runat="server"></asp:TextBox>
-            </li><br />
+            </li>
+            <br />
            
            
              <li>
@@ -35,21 +39,22 @@
             </li>
    
             <br />
-             <br />
-                
-            <li>
-            <asp:Button ID="btnInicio" runat="server" Text="Inicio" CssClass="btnAdd btn" OnClick="btnInicio_Click"/>
-            </li>
-
-            <li> 
-                <asp:Button ID="btnSeguinte" CssClass="btnAdd btn" runat="server" Text="Seguinte" OnClick="btnSeguinte_Click"/>
-            </li>
-
+             </ul>
+               
              <p>
                 <asp:Label ID="lblMensagem" runat="server" ForeColor="#CC3300"></asp:Label>
                 </p>
+         </asp:Panel>
+    <asp:Panel runat="server" ID="PanelBotoes" Visible="true" Font-Size="Large" Width="720px" Height="40px" CssClass="botoes">     
+             
+           
+            <asp:Button ID="btnInicio" runat="server" Text="Inicio" CssClass="btnAdd btn" OnClick="btnInicio_Click"/>
+           
+            <asp:Button ID="btnSeguinte" CssClass="btnAdd btn" runat="server" Text="Confirmar" OnClick="btnSeguinte_Click"/>
 
-        </ul>
+            <asp:Button ID="btnAlugar" CssClass="btnAdd btn" runat="server" Visible="false" Text="Alugar" OnClick="btnAlugar_Click"/>
+         </asp:Panel>
     </asp:Panel>
+     <asp:TextBox ID="txtCodigoCliente" runat="server" Visible="False"></asp:TextBox>
 
 </asp:Content>

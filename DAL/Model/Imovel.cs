@@ -15,6 +15,7 @@ namespace DAL.Model
         public int quantidadeQuarto { get; set; }
         public string tipoSituacao { get; set; }
         public float valorImovel { get; set; }
+        
 
     }
 }

@@ -16,26 +16,31 @@ namespace AppLocForWeb
 
         }
 
-        protected void btnCadastrar_Click1(object sender, EventArgs e)
+        protected void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Principal.aspx");
+        }
+
+        protected void btnCadastrar_Click(object sender, EventArgs e)
         {
             Response.Redirect("GravandoCliente2.aspx");
         }
 
-        protected void btnConfirmar_Click(object sender, EventArgs e)
+        protected void btnConfirmar_Click1(object sender, EventArgs e)
         {
-             string login = tbLogin.Text;
-             string senha = tbSenha.Text;
+            string login = tbLogin.Text;
+            string senha = tbSenha.Text;
 
-            if(login == "" || senha == "")
+            if (login == "" || senha == "")
             {
                 lblMensagem.Text = "Campos vazios!";
             }
-            else 
-            { 
+            else
+            {
                 ClienteDAL d = new ClienteDAL();
                 CadastroCliente c = d.PesquisarPorlogin(login, senha);
 
-                if(c == null)
+                if (c == null)
                 {
                     lblMensagem.Text = "Cliente não encontrado!";
                     tbLogin.Text = "";
@@ -54,12 +59,7 @@ namespace AppLocForWeb
                     url = "MostrandoCliente2.aspx?codigoCliente=" + codigoCliente + "&nomeCliente=" + nomeCliente + "&telefoneCliente=" + telefoneCliente + "&cpfCliente=" + cpfCliente + "&loginCliente=" + loginCliente + "&senhaCliente=" + senhaCliente;
                     Response.Redirect(url);
                 }
-         }
-        }
-
-        protected void btnVoltar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Principal.aspx");
+            }
         }
     }
 }

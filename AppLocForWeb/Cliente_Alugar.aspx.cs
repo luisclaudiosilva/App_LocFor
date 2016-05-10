@@ -20,11 +20,13 @@ namespace AppLocForWeb
             txtTipoNegocio2.Text = Request.QueryString["negocio"];
             txtQuarto2.Text = Request.QueryString["quarto"];
             txtValor2.Text = Request.QueryString["valor"];
+            txtDataIni.Text = Request.QueryString["dataIni"];
+            txtDatafim.Text = Request.QueryString["datafim"];
         }
 
         protected void btnVoltar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Alugar.aspx");
+            //Response.Redirect("Alugar.aspx");
         }
 
         protected void btnCadastrar_Click(object sender, EventArgs e)
@@ -98,6 +100,8 @@ namespace AppLocForWeb
                         string negocio2 = txtTipoNegocio2.Text;
                         int quarto2 = Convert.ToInt32(txtQuarto2.Text);
                         float valor2 = Convert.ToUInt32(txtValor2.Text);
+                        string dataini = txtDataIni.Text;
+                        string datafim = txtDatafim.Text;
                         string url = null;
                        
 
@@ -107,7 +111,7 @@ namespace AppLocForWeb
                         }
                         else
                         {
-                            url = "MostrandoCliente.aspx?codigoCliente=" + codigoCliente + "&nomeCliente=" + nomeCliente + "&telefoneCliente=" + telefoneCliente + "&cpfCliente=" + cpfCliente + "&loginCliente=" + loginCliente + "&senhaCliente=" + senhaCliente + "&codigoImovel=" + codigo2 + "&nomeBairro=" + bairro2 + "&tipo=" + tipo2 + "&negocio=" + negocio2 + "&quarto=" + quarto2 + "&valor=" + valor2;
+                            url = "MostrandoCliente.aspx?codigoCliente=" + codigoCliente + "&nomeCliente=" + nomeCliente + "&telefoneCliente=" + telefoneCliente + "&cpfCliente=" + cpfCliente + "&loginCliente=" + loginCliente + "&senhaCliente=" + senhaCliente + "&codigoImovel=" + codigo2 + "&nomeBairro=" + bairro2 + "&tipo=" + tipo2 + "&negocio=" + negocio2 + "&quarto=" + quarto2 + "&valor=" + valor2 + "&dataIni=" + dataini + "&datafim=" +datafim;
 
                         }
                         Response.Redirect(url);
